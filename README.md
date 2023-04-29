@@ -1,6 +1,21 @@
 # Norwegian Sales Tax Calculator
 A Blazor static website with a .NET 6 serverless backend that provides crypto price information. The tickers update every in realtime whenever new data is made available to the database.
 
+# Value added tax
+    Resource: https://www.skatteetaten.no/en/rates/value-added-tax/
+                https://www.skatteetaten.no/en/rates/vat-rates-for-cultural-events-sports-events-and-player-rights/
+
+    Data
+    Normal rate - 25%
+    Foodstuffs - 15%
+    Passenger transport, cinema, tickets, letting of rooms -12% * 
+        *Passenger transport, accommodation, public broadcasting and entry to cinemas, sporting events, amusement parks and activity centres.
+
+    VAT rates for purchases of services from abroad, Svalbard and Jan Mayen - 25%
+
+
+
+
 This project contains two different architectures and was made to demo how to implement real-time functionality to a static site.
 
 View it live [here](https://cryptotickerstaticsite.z20.web.core.windows.net/)
