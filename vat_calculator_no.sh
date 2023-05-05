@@ -3,7 +3,7 @@ category_en="Choose the category of product:"
 category_no="Valg produktkategori:"
 category_pl="Wybierz kategorię produktu:"
 
-categories_eng=("Normal rate", "Food", "Transport,cinema,tickets,etc.")
+categories_eng=("Normal rate" "Food" "Transport,cinema,tickets,etc.")
 
 
 normal_rate=25
@@ -13,7 +13,7 @@ vat_svalbard=25
 
 function second_menu(){
     echo "$1"
-    select ctgr in ${categories_eng[@]}
+    select ctgr in "${categories_eng[@]}"
 do 
     case $ctgr in
         "Normal rate")
