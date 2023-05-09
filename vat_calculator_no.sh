@@ -4,12 +4,16 @@ category_no="Valg produktkategori:"
 category_pl="Wybierz kategorię produktu:"
 
 categories_eng=("Normal rate" "Food" "Transport,cinema,tickets,etc.")
+categories_no=("Generell sats" "Næringsmidler" "Persontransport, kinobilletter, utleie av rom osv.")
+categories_pl=("Normalna stawka" "Jedzenie" "usługi transportowe,kino,bilety,etc.")
 
 
 normal_rate=25
 food=15
 diverse=12
 vat_svalbard=25
+
+
 
 function second_menu(){
     echo "$1"
@@ -42,10 +46,16 @@ do
             sleep 0.5
             second_menu "$category_en $categories_eng";;
 
+
         "Norsk")
-            echo "Du valgte $lng språk";;
+            echo "Du valgte $lng språk"
+            sleep 0.5
+            second_menu "$category_no $categories_no";;
+
         "Polski")
-            echo "Wybrałeś język $lng";;
+            echo "Wybrałeś język $lng"
+            sleep 0.5
+            second_menu "$category_pl $categories_pl";;
             *) "number between 1-3";;
     esac
 done
